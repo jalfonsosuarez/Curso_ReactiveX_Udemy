@@ -28,6 +28,7 @@ const intervalo$ = new Observable<number>( subscriber => {
 
 });
 
+// Varias subscripciones al mismo observable
 const subs1 = intervalo$.subscribe( num => {console.log( 'Num: ', num );});
 const subs2 = intervalo$.subscribe( num => {console.log( 'Num: ', num );});
 const subs3 = intervalo$.subscribe( num => {console.log( 'Num: ', num );});
